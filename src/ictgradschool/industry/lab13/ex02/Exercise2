@@ -1,0 +1,5 @@
+1. value = 5050
+
+2. The add method is not thread-safe so multiple threads could try to update it at the same time, resulting in the wrong end value.
+    To enforce the execution of the method call on thread at a time, I could add the keyword ``synchronized`` to the method signature.
+    E.g.  private synchronized void start() throws InterruptedException { ... }
