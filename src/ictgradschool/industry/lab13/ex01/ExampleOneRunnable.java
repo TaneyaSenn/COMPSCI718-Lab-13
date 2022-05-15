@@ -11,15 +11,15 @@ public class ExampleOneRunnable {
         }
     };
 
-    Thread myThread = new Thread(myRunnable);
-    myThread.start();
-
-    myThread.interrupt();
-
-        try {
-            myThread.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//    Thread myThread = new Thread(myRunnable);
+//    myThread.start();
+//
+//    myThread.interrupt();
+//
+//        try {
+//            myThread.join();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
 }
